@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>She Can Foundation</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/land.css') }}">
+</head>
+<body>
+
+  <header>
+    <h1>She Can Foundation</h1>
+
+    <nav>
+      <a href="/home">Home</a>
+      <a href="/about">About</a>
+      <a href="/join">Join Us</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h2>Empowering Women, Changing Lives</h2>
+
+      <p>
+        She Can Foundation is dedicated to empowering girls and women through education,
+        skill development, leadership opportunities, and community support.
+      </p>
+
+      <a href="#join" class="btn">Become a Volunteer</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="about">
+      <img src="{{ url_for('static', filename='pic.jpg') }}">
+
+      <div class="about-text">
+        <h3>About Us</h3>
+
+        <p>
+          We believe every woman deserves equal opportunities to learn, grow, and succeed.
+          Our mission is to inspire confidence, provide resources, and create safe spaces
+          where women can achieve their dreams.
+        </p>
+
+        <div class="cards">
+          <div class="card">
+            <h4>Education</h4>
+            <p>Providing educational support and learning opportunities.</p>
+          </div>
+
+          <div class="card">
+            <h4>Leadership</h4>
+            <p>Helping women build confidence and leadership skills.</p>
+          </div>
+
+          <div class="card">
+            <h4>Community</h4>
+            <p>Creating a strong and supportive community for growth.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="join" id="join">
+    <h3>Join Our Mission</h3>
+
+    <p>
+      Be a part of a movement that empowers women and transforms communities.
+      Your support and contribution can create real change.
+    </p>
+
+    <a href="#" class="btn" id="volunteerBtn">Volunteer Now</a>
+  </section>
+
+  <footer>
+    <p>© 2026 She Can Foundation | Designed by Bitupan Ray</p>
+  </footer>
+
+  <script src="{{ url_for('static', filename='js/land.js') }}"></script>
+</body>
+</html>

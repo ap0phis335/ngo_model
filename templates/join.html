@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Join Us - She Can Foundation</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/join.css') }}">
+</head>
+<body>
+
+  <div class="container">
+    <form id="joinForm" class="join-form">
+      <h1>Join She Can Foundation</h1>
+      <p>Become a volunteer and help empower communities.</p>
+
+      <div class="input-box">
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your full name" required>
+      </div>
+
+      <div class="input-box">
+        <label>Email Address</label>
+        <input type="email" placeholder="Enter your email" required>
+      </div>
+
+      <div class="input-box">
+        <label>Phone Number</label>
+        <input type="tel" placeholder="Enter your phone number" required>
+      </div>
+
+      <div class="input-box">
+        <label>Why do you want to join?</label>
+        <textarea rows="5" placeholder="Write your message here..." required></textarea>
+      </div>
+
+      <button type="submit" class="btn">Register Now</button>
+    </form>
+  </div>
+
+  <script src="{{ url_for('static', filename='js/join.js') }}"></script>
+</body>
+</html>

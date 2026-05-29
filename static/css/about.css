@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f8f9fc;
+  color: #333;
+}
+
+header {
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+  color: white;
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 28px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  opacity: 0.8;
+}
+
+.about-hero {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(to right, #ffe3ec, #fff6f9);
+  padding: 20px;
+}
+
+.content h2 {
+  font-size: 48px;
+  color: #ff4f81;
+  margin-bottom: 20px;
+}
+
+.content p {
+  max-width: 700px;
+  margin: auto;
+  font-size: 18px;
+}
+
+.about-section {
+  padding: 80px 10%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.about-card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.about-card:hover {
+  transform: translateY(-8px);
+}
+
+.about-card h3 {
+  color: #ff4f81;
+  margin-bottom: 15px;
+}
+
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  .content h2 {
+    font-size: 36px;
+  }
+}
